@@ -49,20 +49,6 @@
   line-height:1.5;
 }
 
-.about__actions{
-  margin-top:26px;
-}
-
-.about__actions .btn{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:12px 28px;
-  border-radius:999px;
-  text-transform:uppercase;
-  letter-spacing:0.18em;
-}
-
 .about__visual{
   flex:1 1 44%;
   min-width:220px;

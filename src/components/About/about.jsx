@@ -20,17 +20,6 @@ export default function About({ imageSrc }) {
             <li>Optional handoff to Community Health Workers for pickup.</li>
           </ul>
 
-          {/* CTA BUTTON */}
-          <div className="about__actions">
-            <a 
-              href="https://umuti-safe-app.vercel.app/login" 
-              className="btn btn--primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Start Scanning
-            </a>
-          </div>
         </div>
 
         <div className="about__visual">

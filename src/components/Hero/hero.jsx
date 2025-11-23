@@ -36,7 +36,7 @@ export default function Hero({
         <div className="hero__card">
 
           <h2 className="hero__heading">
-            Safe medicine disposal starts on your phone.
+            Safe medicine disposal starts here.
           </h2>
 
           <p className="hero__sub">
@@ -47,13 +47,20 @@ export default function Hero({
           <div className="hero__actions">
             <a
               className="btn btn--primary"
+              href="https://umuti-safe-app.vercel.app/register"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Create Account
+            </a>
+            <a
+              className="btn btn--alt"
               href="https://umuti-safe-app.vercel.app/login"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Launch UmutiSafe
+              Log In
             </a>
-            <a className="btn btn--alt" href="#how-it-works">Learn The Flow</a>
           </div>
 
         </div>
