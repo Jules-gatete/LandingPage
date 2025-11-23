@@ -8,9 +8,9 @@ export default function Policy() {
           <span className="policy__eyebrow">End-User License · Privacy</span>
           <h2 className="policy__title">End-User License & Privacy Policy Agreement</h2>
           <p className="policy__lead">
-            We protect the privacy of every household that trusts UmutiSafe. Review the essentials of our
-            End-User License Agreement (EULA) and Privacy Policy to understand how we safeguard your data
-            and deliver responsible medicine disposal guidance.
+            Your safety, privacy, and trust matter to us. UmutiSafe provides medicine classification and
+            disposal guidance while ensuring all user data is handled responsibly, ethically, and in full 
+            compliance with Rwanda’s Data Protection Law and FDA disposal guidelines.
           </p>
         </header>
 
@@ -18,27 +18,29 @@ export default function Policy() {
           <article className="policy__card" aria-labelledby="policy-license">
             <h3 id="policy-license">Key EULA Highlights</h3>
             <ul>
-              <li>UmutiSafe is licensed for personal and community health worker use only.</li>
-              <li>Do not redistribute guidance or imagery without permission from UmutiSafe.</li>
-              <li>Use the app responsibly and follow local regulations when disposing of medicines.</li>
-              <li>Report suspected misuse so we can keep disposal instructions accurate and safe.</li>
+              <li>UmutiSafe is licensed for personal household use and Community Health Worker (CHW) support only.</li>
+              <li>Guidance provided by UmutiSafe follows Rwanda FDA disposal standards and must be used responsibly.</li>
+              <li>Do not redistribute system content, disposal rules, or internal logic without written permission.</li>
+              <li>Always seek CHW assistance when home disposal is not feasible or when medicines require supervised handling.</li>
             </ul>
           </article>
 
           <article className="policy__card" aria-labelledby="policy-privacy">
             <h3 id="policy-privacy">Privacy Commitments</h3>
             <ul>
-              <li>No sale of personal data—ever.</li>
-              <li>Images are encrypted in transit and anonymized before training our detection models.</li>
-              <li>Location details are only used to route you to the closest certified disposal options.</li>
-              <li>Contact data is retained solely for support and mission-critical updates.</li>
+              <li>We never sell, trade, or share personal data with third-party advertisers.</li>
+              <li>UmutiSafe does <em>not</em> store uploaded images; any image processed for OCR is deleted immediately after use.</li>
+              <li>Location or contact details are used only—with your explicit consent—when requesting CHW pickup support.</li>
+              <li>Data minimization: only essential information is processed to classify medicines and provide safe disposal guidance.</li>
             </ul>
           </article>
         </div>
 
         <div className="policy__cta">
           <a className="policy__btn" href="#footer">Download Full Agreement (PDF)</a>
-          <p className="policy__note">Questions about consent or data processing? Reach us through the support form above.</p>
+          <p className="policy__note">
+            Need clarity about consent, privacy, or CHW disposal procedures? Contact us through the support form above.
+          </p>
         </div>
       </div>
     </section>

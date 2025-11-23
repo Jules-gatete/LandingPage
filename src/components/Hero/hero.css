@@ -1,7 +1,6 @@
 .hero{
     position:relative;
-    min-height:80vh;
-    height:100vh;
+    min-height:100vh;
     overflow:hidden;
     color:#fff;
     font-family:'Helvetica Neue', Arial, sans-serif;
@@ -18,15 +17,15 @@
     object-fit:cover;
     z-index:1;
     pointer-events:none;
-    filter:brightness(0.62) saturate(0.98);
+    filter:brightness(0.7) saturate(1.02);
 }
 
 .hero__overlay{
     position:absolute;
     inset:0;
     background:
-        linear-gradient(135deg, rgba(8, 49, 74, 0.34) 0%, rgba(6, 24, 34, 0.48) 60%),
-        linear-gradient(200deg, rgba(11, 111, 167, 0.22) 0%, rgba(0, 0, 0, 0.36) 100%);
+        linear-gradient(135deg, rgba(11, 66, 102, 0.28) 0%, rgba(8, 32, 48, 0.44) 58%),
+        linear-gradient(210deg, rgba(11, 111, 167, 0.16) 0%, rgba(0, 0, 0, 0.28) 100%);
     z-index:5;
 }
 
@@ -49,12 +48,12 @@
     align-items:flex-start;
     gap:clamp(16px, 3vw, 28px);
     max-width:620px;
-    background:rgba(4, 20, 31, 0.38);
+    background:rgba(6, 32, 46, 0.28);
     padding:clamp(28px, 5vw, 48px);
     border-radius:22px;
-    box-shadow:0 24px 48px rgba(3, 12, 19, 0.32);
-    backdrop-filter:blur(14px);
-    border:1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:0 22px 44px rgba(3, 12, 19, 0.26);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero__heading{
