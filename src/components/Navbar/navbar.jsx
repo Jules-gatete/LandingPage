@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import logoMark from '../../assets/logo.svg?url'
 import './navbar.css'
 
 export default function Navbar() {
@@ -13,7 +14,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="navbar__brand">
-          <img className="navbar__logo" src="/logo.svg" alt="UmutiSafe Logo" />
+          <img className="navbar__logo" src={logoMark} alt="UmutiSafe Logo" />
           <span className="navbar__wordmark">UmutiSafe</span>
         </div>
 
