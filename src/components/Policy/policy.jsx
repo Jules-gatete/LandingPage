@@ -1,5 +1,10 @@
 import './policy.css'
 
+const fullPolicyPdf = new URL(
+  '../../assets/UmutiSafe Privacy Policy & End‑User License Agreement (EULA).pdf',
+  import.meta.url
+).href
+
 export default function Policy() {
   return (
     <section className="policy" id="policy">
@@ -37,9 +42,16 @@ export default function Policy() {
         </div>
 
         <div className="policy__cta">
-          <a className="policy__btn" href="#footer">Download Full Agreement (PDF)</a>
+          <a
+            className="policy__btn"
+            href={fullPolicyPdf}
+            download="UmutiSafe-Privacy-Policy.pdf"
+            type="application/pdf"
+          >
+            Download Full Agreement (PDF)
+          </a>
           <p className="policy__note">
-            Need clarity about consent, privacy, or CHW disposal procedures? Contact us through the support form above.
+            Need clarity about consent, privacy, or CHW disposal procedures? Contact us through the support form.
           </p>
         </div>
       </div>

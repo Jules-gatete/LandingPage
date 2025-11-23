@@ -23,6 +23,9 @@
   gap:6px;
   text-align:center;
   margin-right:26px;
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
 }
 .navbar__toggle{
   display:none;

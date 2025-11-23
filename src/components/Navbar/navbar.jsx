@@ -13,10 +13,15 @@ export default function Navbar() {
       <div className="navbar__inner">
 
         {/* Logo */}
-        <div className="navbar__brand">
+        <a
+          className="navbar__brand"
+          href="#home"
+          onClick={handleLinkClick}
+          aria-label="UmutiSafe home"
+        >
           <img className="navbar__logo" src={logoMark} alt="UmutiSafe Logo" />
           <span className="navbar__wordmark">UmutiSafe</span>
-        </div>
+        </a>
 
         <button
           className="navbar__toggle"
