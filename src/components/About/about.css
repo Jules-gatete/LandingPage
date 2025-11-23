@@ -1,0 +1,105 @@
+.about{
+  padding:clamp(32px, 6vw, 96px) 4vw;
+  box-sizing:border-box;
+  background:#000;
+  color:#fff;
+}
+
+.about__inner{
+  max-width:1300px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:6vw;
+  /* allow wrapping on very narrow screens */
+  flex-wrap:wrap;
+}
+
+.about__text{
+  flex:1 1 48%;
+  min-width:260px;
+}
+
+.about__title{
+  /* fluid heading size */
+  font-size:clamp(1.6rem, 2.8vw + 1rem, 3.2rem);
+  line-height:1.05;
+  margin:0 0 18px;
+  font-weight:800;
+}
+
+.about__lead{
+  margin:0;
+  color:rgba(255,255,255,0.92);
+  line-height:1.6;
+  font-size:clamp(0.95rem, 0.9vw + 0.6rem, 1.05rem);
+}
+
+.about__list{
+  margin:18px 0 0;
+  padding:0 0 0 20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  font-size:clamp(0.95rem, 0.8vw + 0.6rem, 1.04rem);
+  color:rgba(224, 236, 242, 0.95);
+}
+
+.about__list li{
+  line-height:1.5;
+}
+
+.about__actions{
+  margin-top:26px;
+}
+
+.about__actions .btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 28px;
+  border-radius:999px;
+  text-transform:uppercase;
+  letter-spacing:0.18em;
+}
+
+.about__visual{
+  flex:1 1 44%;
+  min-width:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.about__visual img{
+  width:100%;
+  max-width:620px;
+  height:auto;
+  display:block;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* Layout adjustments for medium screens */
+@media (max-width:1100px){
+  .about__inner{gap:40px}
+  .about__visual img{max-width:520px}
+}
+
+/* Stack on small screens - image below text for readability */
+@media (max-width:900px){
+  .about__inner{flex-direction:column;gap:24px}
+  .about__text,.about__visual{flex-basis:100%}
+  .about__title{font-size:clamp(1.4rem, 3.2vw, 2rem)}
+  .about{padding:28px 16px}
+  .about__visual img{max-width:100%;width:100%}
+  .about__list{margin-top:14px}
+}
+
+/* Very small devices - tighten spacing */
+@media (max-width:420px){
+  .about{padding:20px 12px}
+  .about__title{margin-bottom:12px}
+  .about__lead{font-size:0.95rem}
+}
+

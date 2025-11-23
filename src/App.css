@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary colors set by user */
+    --color-primary: #2E8B57; /* green */
+    --color-accent: #0B6FA7;  /* blue */
+    --color-accent-contrast: #ffffff;
+    --gradient-primary: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+}
